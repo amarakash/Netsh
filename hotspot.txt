@@ -1,0 +1,6 @@
+run as administrator
+
+netsh wlan set hostednetwork mode=allow ssid=AndroidWiFi key=password403
+
+
+netsh wlan start hostednetwork
