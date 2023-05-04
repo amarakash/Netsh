@@ -12,6 +12,6 @@ cacls FolderName /e /p everyone:f
 
 /e = edit
 /p = permission
-:n remove for all users
-:f give all users
+:n remove for all user
+:f full control for all user
 
