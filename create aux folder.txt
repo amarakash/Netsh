@@ -1,0 +1,12 @@
+navigate to the folder where you want to create aux folder.
+
+open command prompt in that folder.
+
+to create aux folder :  md aux\
+to delete aux folder :  rd aux\
+
+
+md -> remove directory
+rd -> remove directory
+
+note: creating aux folder makes its parent folder undeleteable.
