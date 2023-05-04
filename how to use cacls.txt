@@ -1,0 +1,17 @@
+cacls --> change access control list.
+cacls path parameter
+
+example:
+to remove all permission:
+cacls FolderName /e /p everyone:n
+
+
+to give all permission back:
+cacls FolderName /e /p everyone:f
+
+
+/e = edit
+/p = permission
+:n remove for all users
+:f give all users
+
