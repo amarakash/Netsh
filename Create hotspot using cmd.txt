@@ -4,3 +4,5 @@ netsh wlan set hostednetwork mode=allow ssid=AndroidWiFi key=password403
 
 
 netsh wlan start hostednetwork
+
+to stop: netsh wlan stop hostednetwork
