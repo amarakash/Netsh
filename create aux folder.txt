@@ -6,7 +6,7 @@ to create aux folder :  md aux\
 to delete aux folder :  rd aux\
 
 
-md -> remove directory
+md -> make directory
 rd -> remove directory
 
 note: creating aux folder makes its parent folder undeleteable.
