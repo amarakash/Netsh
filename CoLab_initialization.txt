@@ -74,7 +74,7 @@ if hashesorg2019:
 
 
 !printf "\n==========================================\n"
-!printf "||                                      ||\n"
-!printf "||........Success!! All Done!!!.........||\n"
-!printf "||                                      ||\n"
+!printf "||                                        ||\n"
+!printf "||.........Success!! All Done!!!..........||\n"
+!printf "||                                        ||\n"
 !printf "==========================================\n\n"
