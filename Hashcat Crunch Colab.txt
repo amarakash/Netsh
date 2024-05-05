@@ -1,0 +1,54 @@
+Guide:
+Open chrome and goto google drive.
+Create a folder and put your hash_file_name.hc22000 
+files and dictionaries there.
+Then go to google and search for CoLab. 
+Create a new notebook, select a GPU as hardware accelerator 
+and mount google drive.
+Go to the desired folder 
+using cd content/drive/Mydrive/folderName/
+Then install hashcat and use it.
+
+
+
+
+#install hashcat and crunch first
+#use ! Before every command on colab otherwise 
+colab will treat a command as python command
+
+!apt install crunch
+!apt install hashcat
+
+
+
+
+#.cap to .hc22000
+hcxpcapngtool -o output_file_name.hc22000 file_name.cap
+
+
+
+#hashcat command for cracking
+!hashcat -m 22000 hash.hc22000 rockyou.txt
+
+
+
+#show devices(GPU or CPU)
+hashcat -I
+
+
+
+#test cracking speed
+!hashcat -b
+
+
+
+#crunch + hashcat
+#crunch will generate password as input for hashcat( '|' this symbol is called piping )
+
+!crunch 8 8 0123456789 | hashcat -m 22000 n2307.hc22000
+
+
+
+
+#crunch command, @ means variable, "abcde" is fixed
+crunch 8 8 123 -t abcde@@@ -o output_fileName.txt
