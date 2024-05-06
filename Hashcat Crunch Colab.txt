@@ -30,6 +30,10 @@ hcxpcapngtool -o output_file_name.hc22000 file_name.cap
 #hashcat command for cracking
 !hashcat -m 22000 hash.hc22000 rockyou.txt
 
+#use the following command for showing auto status
+#add -d 1 for using device one, -d 1 2 3 for using devices 1-3, -w 4 or -w 3 for best speed 
+!hashcat -m 22000 <hash or hashfile> <wordlist> --status --status-timer 10
+
 
 
 #show devices(GPU or CPU)
